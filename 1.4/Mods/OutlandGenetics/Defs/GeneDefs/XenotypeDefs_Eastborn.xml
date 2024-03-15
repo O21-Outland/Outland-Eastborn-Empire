@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Defs>
+
+	<XenotypeDef>
+		<defName>Outland_Elf</defName>
+		<label>elf</label>
+		<description>A humanoid sentient species closely resembling a human with long pointy ears.</description>
+		<descriptionShort>A humanoid sentient species closely resembling a human with long pointy ears.</descriptionShort>
+		<iconPath>Outland/Eastborn/XenotypeIcons/Xenotype_Eastborn</iconPath>
+		<combatPowerFactor>1.0</combatPowerFactor>
+		<inheritable>true</inheritable>
+		<genes>
+			<li>Outland_SvelteHead</li>
+			<li>Outland_ElvenEars</li>
+			<li>Outland_Evasive</li>
+			<li>Outland_YouthfulAgeing</li>
+			<li>Outland_FragileHealing</li>
+			<li>Outland_LowFertility</li>
+			<li>Outland_ArcaneAffinity_LargeIncrease</li>
+		</genes>
+	</XenotypeDef>
+
+</Defs>

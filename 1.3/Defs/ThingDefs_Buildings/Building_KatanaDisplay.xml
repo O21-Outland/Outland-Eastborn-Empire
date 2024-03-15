@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Defs>
+	
+	<ThingDef ParentName="OutlandFurnitureBase">
+		<defName>Outland_KatanaDisplay</defName>
+		<label>katana display</label>
+		<description>A decorative display katana, it'll break into 3 pieces if it hits anything so it's no use in a fight.</description>
+		<category>Building</category>
+		<thingClass>Building</thingClass>
+		<graphicData>
+			<texPath>Outland/Eastborn/Buildings/KatanaDisplay</texPath>
+			<graphicClass>Graphic_Single</graphicClass>
+			<drawRotated>false</drawRotated>
+			<drawSize>(2, 2)</drawSize>
+            <drawOffset>(0.0, 0.0, 0.0)</drawOffset>
+		</graphicData>
+		<size>(2, 1)</size>
+		<uiIconScale>0.8</uiIconScale>
+		<rotatable>true</rotatable>
+		<altitudeLayer>Building</altitudeLayer>
+		<pathCost>50</pathCost>
+		<passability>PassThroughOnly</passability>
+		<fillPercent>0.9</fillPercent>
+		<leaveResourcesWhenKilled>true</leaveResourcesWhenKilled>
+		<defaultPlacingRot>South</defaultPlacingRot>
+		<statBases>
+			<MaxHitPoints>100</MaxHitPoints>
+			<WorkToBuild>250</WorkToBuild>
+			<Flammability>0</Flammability>
+			<Mass>4</Mass>
+			<Beauty>10</Beauty>
+		</statBases>
+		<building>
+			<isEdifice>false</isEdifice>
+		</building>
+		<costList>
+			<WoodLog>10</WoodLog>
+			<Steel>15</Steel>
+		</costList>
+		<researchPrerequisites>
+			<li>Outland_EastbornDeco</li>
+		</researchPrerequisites>
+		<designationCategory>Outland_OutlandDeco</designationCategory>
+	</ThingDef>
+
+</Defs>

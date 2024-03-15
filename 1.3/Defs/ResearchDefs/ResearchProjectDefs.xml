@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Defs>
+	
+    <ResearchProjectTagDef>
+        <defName>Outland_EastbornStart</defName>
+    </ResearchProjectTagDef>
+
+	<!-- ==================================== Eastborn ========================================== -->
+
+	<ResearchProjectDef ParentName="Outland_ResearchBase">
+		<defName>Outland_EastbornArmory</defName>
+		<label>eastborn armory</label>
+		<description>Learn to craft eastborn apparel, armor and weapons.</description>
+		<prerequisites>
+			<li>ComplexClothing</li>
+			<li>Smithing</li>
+		</prerequisites>
+		<tags>
+			<li>Outland_EastbornStart</li>
+		</tags>
+		<researchViewX>2</researchViewX>
+		<researchViewY>2</researchViewY>
+	</ResearchProjectDef>
+
+	<ResearchProjectDef ParentName="Outland_ResearchBase">
+		<defName>Outland_EastbornDeco</defName>
+		<label>eastborn deco</label>
+		<description>Learn to build eastborn style decorative buildings.</description>
+		<prerequisites>
+			<li>Outland_MedievalFurniture</li>
+		</prerequisites>
+		<tags>
+			<li>Outland_EastbornStart</li>
+		</tags>
+		<researchViewX>2</researchViewX>
+		<researchViewY>2.5</researchViewY>
+	</ResearchProjectDef>
+
+</Defs>

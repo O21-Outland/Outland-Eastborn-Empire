@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Defs>
+
+	<FactionDef ParentName="PlayerFactionBase">
+		<defName>Outland_PlayerEmpire</defName>
+		<label>Eastborn Empire</label>
+		<description>A small empire.</description>
+		<isPlayer>true</isPlayer>
+		<pawnSingular>citizen</pawnSingular>
+		<pawnsPlural>citizens</pawnsPlural>
+		<basicMemberKind>Outland_ImperialCitizen</basicMemberKind>
+		<xenotypeSet Inherit="False">
+			<xenotypeChances>
+				<Outland_Elf>999</Outland_Elf>
+			</xenotypeChances>
+		</xenotypeSet>
+		<allowedCultures>
+			<li>Outland_EastbornCulture</li>
+		</allowedCultures>
+		<techLevel>Medieval</techLevel>
+		<backstoryCategories>
+			<li>Tribal</li>
+		</backstoryCategories>
+		<factionIconPath>Outland/Eastborn/World/EastbornBaseIcon</factionIconPath>
+		<settlementTexturePath>World/WorldObjects/Expanding/Town</settlementTexturePath>
+		<playerInitialSettlementNameMaker>NamerInitialSettlementColony</playerInitialSettlementNameMaker>
+		<factionNameMaker>NamerFactionTribal</factionNameMaker>
+		<settlementNameMaker>NamerSettlementTribal</settlementNameMaker>
+		<startingResearchTags>
+			<li>TribalStart</li>
+			<li>Outland_ResearchStart</li>
+		</startingResearchTags>
+		<apparelStuffFilter>
+			<thingDefs>
+				<li>Cloth</li>
+			</thingDefs>
+		</apparelStuffFilter>
+		<modExtensions>
+			<li Class="VFECore.FactionDefExtension">
+				<!-- TODO: Look into making some Eastborn specific pack animal textures. Muffalo & Horses minimum. -->
+				<!-- <packAnimalTexNameSuffix>EastbornPack</packAnimalTexNameSuffix> -->
+				<strangerInBlackReplacement>Outland_SamuraiInBlack</strangerInBlackReplacement>
+			</li>
+		</modExtensions>
+	</FactionDef>
+
+</Defs>

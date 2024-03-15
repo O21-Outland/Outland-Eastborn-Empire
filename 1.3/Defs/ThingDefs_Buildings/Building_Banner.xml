@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+	
+	<ThingDef ParentName="Outland_BannerBase">
+		<defName>Outland_Sashimono</defName>
+		<label>sashimono</label>
+		<description>Simple decorative banner, with enough space on it for a symbol.</description>
+		<graphicData>
+			<texPath>Outland/Eastborn/Buildings/Sashimono</texPath>
+		</graphicData>
+		<drawerType>MapMeshAndRealTime</drawerType>
+		<tickerType>Rare</tickerType>
+		<researchPrerequisites>
+			<li>Outland_EastbornDeco</li>
+		</researchPrerequisites>
+		<comps>
+			<li Class="TabulaRasa.CompProperties_IdeoIconOverlay">
+				<showSouth>true</showSouth>
+				<showNorth>true</showNorth>
+				<showEast>false</showEast>
+				<showWest>false</showWest>
+				
+				<offsetSouth>(-0.08, 1, 0.8)</offsetSouth>
+				<offsetNorth>(0.08, 1, 0.8)</offsetNorth>
+
+				<drawSize>(0.5, 0.5)</drawSize>
+			</li>
+		</comps>
+	</ThingDef>
+
+</Defs>

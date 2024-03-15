@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Defs>
+	
+	<ThingDef ParentName="OutlandFurnitureBase">
+		<defName>Outland_ToriiGate</defName>
+		<label>torii gate</label>
+		<description>A large stone gate that typically is used to symbolically mark the transition between the mundane and sacred.</description>
+		<category>Building</category>
+		<thingClass>Building</thingClass>
+		<graphicData>
+			<texPath>Outland/Eastborn/Buildings/ToriiGate</texPath>
+			<graphicClass>Graphic_Multi</graphicClass>
+			<drawSize>(5.5, 5.5)</drawSize>
+            <drawOffset>(0.0, 0.0, 0.0)</drawOffset>
+		</graphicData>
+		<size>(4, 1)</size>
+		<uiIconScale>0.8</uiIconScale>
+		<rotatable>true</rotatable>
+		<altitudeLayer>BuildingOnTop</altitudeLayer>
+		<pathCost>0</pathCost>
+		<passability>Standable</passability>
+		<fillPercent>0</fillPercent>
+		<leaveResourcesWhenKilled>true</leaveResourcesWhenKilled>
+		<defaultPlacingRot>South</defaultPlacingRot>
+		<clearBuildingArea>false</clearBuildingArea>
+		<statBases>
+			<MaxHitPoints>200</MaxHitPoints>
+			<WorkToBuild>250</WorkToBuild>
+			<Flammability>0</Flammability>
+			<Mass>4</Mass>
+			<Beauty>10</Beauty>
+		</statBases>
+		<building>
+			<isEdifice>false</isEdifice>
+		</building>
+		<costStuffCount>200</costStuffCount>
+		<stuffCategories>
+			<li>Woody</li>
+			<li>Stony</li>
+		</stuffCategories>
+		<researchPrerequisites>
+			<li>Outland_EastbornDeco</li>
+		</researchPrerequisites>
+		<designationCategory>Outland_OutlandDeco</designationCategory>
+	</ThingDef>
+
+</Defs>
