@@ -1,0 +1,476 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Defs>
+
+	<PawnKindDef Name="Eastborn_PawnKindBase" Abstract="True">
+		<race>Human</race>
+		<xenotypeSet Inherit="False">
+			<xenotypeChances>
+				<Outland_Elf>999</Outland_Elf>
+			</xenotypeChances>
+			<warnIfTotalAbove1>false</warnIfTotalAbove1>
+		</xenotypeSet>
+		<defaultFactionType>Outland_Empire</defaultFactionType>
+		<backstoryCategories>
+			<li>Tribal</li>
+		</backstoryCategories>
+		<maxGenerationAge>70</maxGenerationAge>
+		<chemicalAddictionChance>0.05</chemicalAddictionChance>
+		<invNutrition>2.55</invNutrition>
+		<invFoodDef>RawRice</invFoodDef>
+		<apparelTags>
+			<li>EastbornBasic</li>
+		</apparelTags>
+	</PawnKindDef>
+
+	<PawnKindDef Name="Eastborn_MilitaryBase" ParentName="Eastborn_PawnKindBase" Abstract="True">
+		<minGenerationAge>20</minGenerationAge>
+		<apparelRequired>
+			<li>Outland_Hakama</li>
+		</apparelRequired>
+	</PawnKindDef>
+
+	<PawnKindDef Name="Eastborn_EliteMilitaryBase" ParentName="Eastborn_MilitaryBase" Abstract="True">
+		<maxGenerationAge>45</maxGenerationAge>
+	</PawnKindDef>
+
+	<!-- Poverty tier - citizen -->
+	<PawnKindDef ParentName="Eastborn_PawnKindBase">
+		<defName>Outland_Citizen</defName>
+		<label>citizen</label>
+		<combatPower>35</combatPower>
+		<chemicalAddictionChance>0.10</chemicalAddictionChance>
+		<invNutrition>0</invNutrition>
+		<itemQuality>Poor</itemQuality>
+		<gearHealthRange>
+			<min>0.2</min>
+			<max>1.1</max>
+		</gearHealthRange>
+		<apparelMoney>
+			<min>50</min>
+			<max>125</max>
+		</apparelMoney>
+		<apparelTags>
+			<li>EastbornBasic</li>
+		</apparelTags>
+		<weaponMoney>
+			<min>140</min>
+			<max>150</max>
+		</weaponMoney>
+		<weaponTags>
+			<li>EastbornMeleeCivilian</li>
+		</weaponTags>
+		<techHediffsMoney>
+			<min>140</min>
+			<max>150</max>
+		</techHediffsMoney>
+		<techHediffsTags>
+			<li>Poor</li>
+		</techHediffsTags>
+		<techHediffsChance>0.15</techHediffsChance>
+		<initialWillRange>1~2</initialWillRange>
+		<initialResistanceRange>3~8</initialResistanceRange>
+	</PawnKindDef>
+
+	<!-- Low-tier - merchant, squire -->
+	<PawnKindDef ParentName="Eastborn_PawnKindBase">
+		<defName>Outland_Merchant</defName>
+		<label>merchant</label>
+		<combatPower>40</combatPower>
+		<trader>true</trader>
+		<isFighter>false</isFighter>
+		<gearHealthRange>
+			<min>1</min>
+			<max>1</max>
+		</gearHealthRange>
+		<apparelMoney>
+			<min>300</min>
+			<max>500</max>
+		</apparelMoney>
+		<weaponMoney>
+			<min>100</min>
+			<max>150</max>
+		</weaponMoney>
+		<weaponTags>
+			<li>OutlandMeleeBasic</li>
+		</weaponTags>
+		<modExtensions Inherit="False" />
+		<initialWillRange>1~3</initialWillRange>
+		<initialResistanceRange>5~9</initialResistanceRange>
+	</PawnKindDef>
+
+	<PawnKindDef ParentName="Eastborn_PawnKindBase">
+		<defName>Outland_Squire</defName>
+		<label>squire</label>
+		<combatPower>60</combatPower>
+		<canBeSapper>true</canBeSapper>
+		<gearHealthRange>
+			<min>0.5</min>
+			<max>1.8</max>
+		</gearHealthRange>
+		<apparelMoney>
+			<min>300</min>
+			<max>500</max>
+		</apparelMoney>
+		<apparelTags>
+			<li>EastbornArmorBasic</li>
+		</apparelTags>
+		<weaponMoney>
+			<min>150</min>
+			<max>200</max>
+		</weaponMoney>
+		<weaponTags>
+			<li>EastbornMeleeDecent</li>
+		</weaponTags>
+		<initialWillRange>1~3</initialWillRange>
+		<initialResistanceRange>5~9</initialResistanceRange>
+		<specificApparelRequirements>
+			<li>
+				<apparelLayer>OnSkin</apparelLayer>
+				<color>(90, 90, 90)</color>
+				<stuff>Cloth</stuff>
+			</li>
+			<li>
+				<apparelLayer>Middle</apparelLayer>
+				<color>(50, 123, 168)</color>
+				<stuff>Steel</stuff>
+			</li>
+			<li>
+				<apparelLayer>Shell</apparelLayer>
+				<color>(90, 90, 90)</color>
+				<stuff>Cloth</stuff>
+			</li>
+			<li>
+				<apparelLayer>ShellExtra</apparelLayer>
+				<color>(50, 123, 168)</color>
+				<stuff>Steel</stuff>
+			</li>
+			<li>
+				<apparelLayer>Overhead</apparelLayer>
+				<color>(50, 123, 168)</color>
+				<stuff>Steel</stuff>
+			</li>
+		</specificApparelRequirements>
+	</PawnKindDef>
+
+	<!-- High-tier - bowman, footsoldier -->
+	<PawnKindDef ParentName="Eastborn_MilitaryBase">
+		<defName>Outland_Ninja</defName>
+		<label>ninja</label>
+		<combatPower>80</combatPower>
+		<gearHealthRange>
+			<min>0.8</min>
+			<max>1.8</max>
+		</gearHealthRange>
+		<apparelMoney>
+			<min>500</min>
+			<max>700</max>
+		</apparelMoney>
+		<apparelTags Inherit="False">
+			<li>EastbornScout</li>
+		</apparelTags>
+		<apparelRequired Inherit="False">
+			<li>Outland_NinjaGarb</li>
+			<li>Outland_NinjaHood</li>
+		</apparelRequired>
+		<weaponMoney>
+			<min>150</min>
+			<max>250</max>
+		</weaponMoney>
+		<weaponTags>
+			<li>EastbornLightSharp</li>
+			<li>EastbornRanged</li>
+		</weaponTags>
+		<initialWillRange>2~4</initialWillRange>
+		<initialResistanceRange>14~22</initialResistanceRange>
+		<specificApparelRequirements>
+			<li>
+				<apparelLayer>OnSkin</apparelLayer>
+				<color>(90, 90, 90)</color>
+				<stuff>Cloth</stuff>
+			</li>
+			<li>
+				<apparelLayer>Middle</apparelLayer>
+				<color>(50, 123, 168)</color>
+			</li>
+			<li>
+				<apparelLayer>Shell</apparelLayer>
+				<color>(90, 90, 90)</color>
+			</li>
+			<li>
+				<apparelLayer>ShellExtra</apparelLayer>
+				<color>(50, 123, 168)</color>
+			</li>
+			<li>
+				<apparelLayer>Overhead</apparelLayer>
+				<color>(90, 90, 90)</color>
+				<stuff>Cloth</stuff>
+			</li>
+		</specificApparelRequirements>
+	</PawnKindDef>
+
+	<PawnKindDef ParentName="Eastborn_MilitaryBase">
+		<defName>Outland_Bowman</defName>
+		<label>bowman</label>
+		<combatPower>80</combatPower>
+		<gearHealthRange>
+			<min>0.8</min>
+			<max>1.8</max>
+		</gearHealthRange>
+		<apparelMoney>
+			<min>500</min>
+			<max>700</max>
+		</apparelMoney>
+		<apparelTags>
+			<li>EastbornArmorDecent</li>
+		</apparelTags>
+		<weaponMoney>
+			<min>150</min>
+			<max>250</max>
+		</weaponMoney>
+		<weaponTags>
+			<li>EastbornRanged</li>
+			<li>EastbornRangedHeavy</li>
+		</weaponTags>
+		<initialWillRange>2~4</initialWillRange>
+		<initialResistanceRange>14~22</initialResistanceRange>
+		<specificApparelRequirements>
+			<li>
+				<apparelLayer>OnSkin</apparelLayer>
+				<color>(90, 90, 90)</color>
+				<stuff>Cloth</stuff>
+			</li>
+			<li>
+				<apparelLayer>Middle</apparelLayer>
+				<color>(50, 123, 168)</color>
+				<stuff>Steel</stuff>
+			</li>
+			<li>
+				<apparelLayer>Shell</apparelLayer>
+				<color>(90, 90, 90)</color>
+				<stuff>Cloth</stuff>
+			</li>
+			<li>
+				<apparelLayer>ShellExtra</apparelLayer>
+				<color>(50, 123, 168)</color>
+				<stuff>Steel</stuff>
+			</li>
+			<li>
+				<apparelLayer>Overhead</apparelLayer>
+				<color>(50, 123, 168)</color>
+				<stuff>Steel</stuff>
+			</li>
+		</specificApparelRequirements>
+	</PawnKindDef>
+
+	<PawnKindDef ParentName="Eastborn_MilitaryBase">
+		<defName>Outland_Samurai</defName>
+		<label>samurai</label>
+		<combatPower>90</combatPower>
+		<canBeSapper>true</canBeSapper>
+		<gearHealthRange>
+			<min>0.8</min>
+			<max>1.8</max>
+		</gearHealthRange>
+		<apparelMoney>
+			<min>700</min>
+			<max>1000</max>
+		</apparelMoney>
+		<apparelTags>
+			<li>EastbornMilitary</li>
+			<li>EastbornArmorDecent</li>
+		</apparelTags>
+		<weaponMoney>
+			<min>150</min>
+			<max>250</max>
+		</weaponMoney>
+		<weaponTags>
+			<li>EastbornMeleeDecent</li>
+		</weaponTags>
+		<initialWillRange>2~4</initialWillRange>
+		<initialResistanceRange>14~22</initialResistanceRange>
+		<specificApparelRequirements>
+			<li>
+				<apparelLayer>OnSkin</apparelLayer>
+				<color>(90, 90, 90)</color>
+				<stuff>Cloth</stuff>
+			</li>
+			<li>
+				<apparelLayer>Middle</apparelLayer>
+				<color>(50, 123, 168)</color>
+				<stuff>Steel</stuff>
+			</li>
+			<li>
+				<apparelLayer>Shell</apparelLayer>
+				<color>(90, 90, 90)</color>
+				<stuff>Cloth</stuff>
+			</li>
+			<li>
+				<apparelLayer>ShellExtra</apparelLayer>
+				<color>(50, 123, 168)</color>
+				<stuff>Steel</stuff>
+			</li>
+			<li>
+				<apparelLayer>Overhead</apparelLayer>
+				<color>(50, 123, 168)</color>
+				<stuff>Steel</stuff>
+			</li>
+		</specificApparelRequirements>
+	</PawnKindDef>
+
+	<!-- Elite tier - kensei, lord -->
+	<PawnKindDef Name="Eastborn_Samurai" ParentName="Eastborn_EliteMilitaryBase">
+		<defName>Outland_Kensei</defName>
+		<label>kensei</label>
+		<combatPower>110</combatPower>
+		<apparelMoney>
+			<min>1000</min>
+			<max>1600</max>
+		</apparelMoney>
+		<apparelTags>
+			<li>EastbornMilitary</li>
+			<li>EastbornArmorDecent</li>
+			<li>EastbornArmorElite</li>
+		</apparelTags>
+		<weaponMoney>
+			<min>300</min>
+			<max>300</max>
+		</weaponMoney>
+		<weaponTags>
+			<li>EastbornMeleeDecent</li>
+			<li>EastbornRangedHeavy</li>
+		</weaponTags>
+		<initialWillRange>2~4</initialWillRange>
+		<initialResistanceRange>17~25</initialResistanceRange>
+		<specificApparelRequirements>
+			<li>
+				<apparelLayer>OnSkin</apparelLayer>
+				<color>(90, 90, 90)</color>
+				<stuff>Cloth</stuff>
+			</li>
+			<li>
+				<apparelLayer>Middle</apparelLayer>
+				<color>(50, 123, 168)</color>
+				<stuff>Steel</stuff>
+			</li>
+			<li>
+				<apparelLayer>Shell</apparelLayer>
+				<color>(90, 90, 90)</color>
+				<stuff>Cloth</stuff>
+			</li>
+			<li>
+				<apparelLayer>ShellExtra</apparelLayer>
+				<color>(50, 123, 168)</color>
+				<stuff>Steel</stuff>
+			</li>
+			<li>
+				<apparelLayer>Overhead</apparelLayer>
+				<color>(50, 123, 168)</color>
+				<stuff>Steel</stuff>
+			</li>
+		</specificApparelRequirements>
+	</PawnKindDef>
+
+	<PawnKindDef ParentName="Eastborn_Samurai">
+		<defName>Outland_Kazoku</defName>
+		<label>kazoku</label>
+		<combatPower>140</combatPower>
+		<minGenerationAge>30</minGenerationAge>
+		<maxGenerationAge>999</maxGenerationAge>
+		<itemQuality>Good</itemQuality>
+		<factionLeader>false</factionLeader>
+		<apparelMoney>
+			<min>1600</min>
+			<max>2400</max>
+		</apparelMoney>
+		<weaponMoney>
+			<min>500</min>
+			<max>700</max>
+		</weaponMoney>
+		<initialWillRange>3~5</initialWillRange>
+		<initialResistanceRange>20~30</initialResistanceRange>
+		<specificApparelRequirements>
+			<li>
+				<apparelLayer>OnSkin</apparelLayer>
+				<color>(90, 90, 90)</color>
+				<stuff>Cloth</stuff>
+			</li>
+			<li>
+				<apparelLayer>Middle</apparelLayer>
+				<color>(50, 123, 168)</color>
+				<stuff>Steel</stuff>
+			</li>
+			<li>
+				<apparelLayer>Shell</apparelLayer>
+				<color>(90, 90, 90)</color>
+				<stuff>Cloth</stuff>
+			</li>
+			<li>
+				<apparelLayer>ShellExtra</apparelLayer>
+				<color>(50, 123, 168)</color>
+				<stuff>Steel</stuff>
+			</li>
+			<li>
+				<apparelLayer>Overhead</apparelLayer>
+				<color>(50, 123, 168)</color>
+				<stuff>Steel</stuff>
+			</li>
+		</specificApparelRequirements>
+	</PawnKindDef>
+
+	<!-- noble kinds -->
+	<PawnKindDef ParentName="Eastborn_Samurai">
+		<defName>Outland_Emperor</defName>
+		<label>emperor</label>
+		<labelFemale>empress</labelFemale>
+		<combatPower>150</combatPower>
+		<minGenerationAge>30</minGenerationAge>
+		<maxGenerationAge>999</maxGenerationAge>
+		<itemQuality>Good</itemQuality>
+		<factionLeader>true</factionLeader>
+		<apparelRequired>
+			<li>Outland_ShogunPauldrons</li>
+			<li>Outland_ShogunHelmet</li>
+		</apparelRequired>
+		<apparelMoney>
+			<min>1600</min>
+			<max>3000</max>
+		</apparelMoney>
+		<weaponTags>
+			<li>EastbornRangedAdvanced</li>
+		</weaponTags>
+		<weaponMoney>
+			<min>500</min>
+			<max>700</max>
+		</weaponMoney>
+		<initialWillRange>3~5</initialWillRange>
+		<initialResistanceRange>20~30</initialResistanceRange>
+		<specificApparelRequirements>
+			<li>
+				<apparelLayer>OnSkin</apparelLayer>
+				<color>(90, 90, 90)</color>
+				<stuff>Cloth</stuff>
+			</li>
+			<li>
+				<apparelLayer>Middle</apparelLayer>
+				<color>(50, 123, 168)</color>
+				<stuff>Steel</stuff>
+			</li>
+			<li>
+				<apparelLayer>Shell</apparelLayer>
+				<color>(90, 90, 90)</color>
+				<stuff>Cloth</stuff>
+			</li>
+			<li>
+				<apparelLayer>ShellExtra</apparelLayer>
+				<color>(50, 123, 168)</color>
+				<stuff>Steel</stuff>
+			</li>
+			<li>
+				<apparelLayer>Overhead</apparelLayer>
+				<color>(50, 123, 168)</color>
+				<stuff>Steel</stuff>
+			</li>
+		</specificApparelRequirements>
+	</PawnKindDef>
+
+</Defs>
