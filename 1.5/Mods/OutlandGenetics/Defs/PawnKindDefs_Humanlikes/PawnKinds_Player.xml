@@ -9,7 +9,6 @@
 			<xenotypeChances>
 				<Outland_Elf>999</Outland_Elf>
 			</xenotypeChances>
-			<warnIfTotalAbove1>false</warnIfTotalAbove1>
 		</xenotypeSet>
 		<defaultFactionType>Outland_PlayerEmpire</defaultFactionType>
 		<backstoryCategories>
