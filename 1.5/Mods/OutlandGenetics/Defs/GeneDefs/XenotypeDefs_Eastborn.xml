@@ -16,7 +16,7 @@
 			<li>Outland_YouthfulAgeing</li>
 			<li>Outland_FragileHealing</li>
 			<li>Outland_LowFertility</li>
-			<li>Outland_ArcaneAffinity_LargeIncrease</li>
+			<li MayRequire="Neronix17.Outland.MagesGuild">Outland_ArcaneAffinity_LargeIncrease</li>
 		</genes>
 	</XenotypeDef>
 
