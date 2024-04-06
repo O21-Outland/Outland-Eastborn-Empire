@@ -9,7 +9,7 @@
 		<statBases>
 			<WorkToBuild>15000</WorkToBuild>
 			<MaxHitPoints>250</MaxHitPoints>
-			<Beauty>30</Beauty>
+			<Beauty>10</Beauty>
 		</statBases>
 		<graphicData>
 			<texPath>Outland/Eastborn/Buildings/WideDoor/DoorMover</texPath>
@@ -24,10 +24,7 @@
 		<size>(2, 1)</size>
 		<rotatable>true</rotatable>
 		<constructionSkillPrerequisite>5</constructionSkillPrerequisite>
-		<costStuffCount>75</costStuffCount>
-		<costList>
-			<Gold>50</Gold>
-		</costList>
+		<costStuffCount>100</costStuffCount>
 		<building>
 			<blueprintClass>Blueprint_Build</blueprintClass>
 			<blueprintGraphicData>

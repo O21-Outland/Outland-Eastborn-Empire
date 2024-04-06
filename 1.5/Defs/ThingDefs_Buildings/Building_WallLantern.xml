@@ -1,14 +1,21 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <Defs>
 
-	<ThingDef ParentName="OutlandWallLightBase" Name="OutlandWallLanternBase" Abstract="True">
+	<ThingDef ParentName="OutlandWallLightBase" Name="OutlandWallBoxLanternBase" Abstract="True">
 		<description>A wall mounted lighting fixture. Embedded into the wall slightly.</description>
 		<graphicData>
-			<texPath>Outland/Eastborn/Buildings/WallBoxLamp</texPath>
+			<texPath>Outland/Buildings/Furniture/Wood/WallBoxLamp</texPath>
 			<graphicClass>Graphic_Multi</graphicClass>
 			<shaderType>CutoutComplex</shaderType>
-			<drawSize>(1, 1)</drawSize>
+			<drawOffsetNorth>(0,0,0.9)</drawOffsetNorth>
+			<drawOffsetSouth>(0,0,-0.9)</drawOffsetSouth>
+			<drawOffsetWest>(-0.9,0,0)</drawOffsetWest>
+			<drawOffsetEast>(0.9,0,0)</drawOffsetEast>
+			<damageData>
+			  <enabled>false</enabled>
+			</damageData>
 		</graphicData>
+		<uiIconPath>Outland/Buildings/Furniture/Wood/WallBoxLamp_north</uiIconPath>
 		<statBases>
 			<MaxHitPoints>10</MaxHitPoints>
 			<WorkToBuild>100</WorkToBuild>
@@ -44,36 +51,24 @@
 		</modExtensions>
 	</ThingDef>
 	
-	<ThingDef ParentName="OutlandWallLanternBase">
+	<ThingDef ParentName="OutlandWallBoxLanternBase">
 		<defName>Outland_WallBoxLantern</defName>
 		<label>wall box lantern</label>
 		<comps>
-			<li Class="VanillaFurnitureExpanded.CompProperties_GlowerExtended">
-				<spawnGlowerInFacedCell>true</spawnGlowerInFacedCell>
-				<colorOptions>
-					<li>
-						<glowRadius>7</glowRadius>
-						<glowColor>(252, 187, 113)</glowColor>
-						<colorLabel>normal</colorLabel>
-					</li>
-				</colorOptions>
+			<li Class="CompProperties_Glower">
+				<glowRadius>9</glowRadius>
+				<glowColor>(184, 136, 83, 0)</glowColor>
 			</li>
 		</comps>
 	</ThingDef>
 	
-	<ThingDef ParentName="OutlandWallLanternBase" MayRequire="Ludeon.RimWorld.Ideology">
+	<ThingDef ParentName="OutlandWallBoxLanternBase" MayRequire="Ludeon.RimWorld.Ideology">
 		<defName>Outland_WallBoxLantern_Darklight</defName>
 		<label>wall box lantern (darklight)</label>
 		<comps>
-			<li Class="VanillaFurnitureExpanded.CompProperties_GlowerExtended">
-				<spawnGlowerInFacedCell>true</spawnGlowerInFacedCell>
-				<colorOptions>
-					<li>
-						<glowRadius>7</glowRadius>
-						<glowColor>(78, 226, 229)</glowColor>
-						<colorLabel>darklight</colorLabel>
-					</li>
-				</colorOptions>
+			<li Class="CompProperties_Glower">
+				<glowRadius>9</glowRadius>
+				<glowColor>(78, 226, 229, 0)</glowColor>
 			</li>
 		</comps>
 	</ThingDef>
