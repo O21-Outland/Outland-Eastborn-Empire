@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Defs>
+
+	<ThingDef ParentName="OutlandWallLightBase" Name="OutlandWallBoxLanternBase" Abstract="True">
+		<description>A wall mounted lighting fixture. Embedded into the wall slightly.</description>
+		<graphicData>
+			<texPath>Outland/Buildings/Furniture/Wood/WallBoxLamp</texPath>
+			<graphicClass>Graphic_Multi</graphicClass>
+			<shaderType>CutoutComplex</shaderType>
+			<drawOffsetNorth>(0,0,0.9)</drawOffsetNorth>
+			<drawOffsetSouth>(0,0,-0.9)</drawOffsetSouth>
+			<drawOffsetWest>(-0.9,0,0)</drawOffsetWest>
+			<drawOffsetEast>(0.9,0,0)</drawOffsetEast>
+			<damageData>
+			  <enabled>false</enabled>
+			</damageData>
+		</graphicData>
+		<uiIconPath>Outland/Buildings/Furniture/Wood/WallBoxLamp_north</uiIconPath>
+		<statBases>
+			<MaxHitPoints>10</MaxHitPoints>
+			<WorkToBuild>100</WorkToBuild>
+			<Flammability>1.0</Flammability>
+			<Mass>2</Mass>
+		</statBases>
+		<costStuffCount>5</costStuffCount>
+		<stuffCategories>
+			<li>Woody</li>
+		</stuffCategories>
+		<researchPrerequisites>
+			<li>ComplexFurniture</li>
+		</researchPrerequisites>
+		<comps>
+			<li Class="CompProperties_Flickable" />
+			<li Class="CompProperties_Refuelable">
+				<fuelConsumptionRate>2.0</fuelConsumptionRate>
+				<fuelCapacity>10.0</fuelCapacity>
+				<fuelFilter>
+					<thingDefs>
+						<li>WoodLog</li>
+						<li>Chemfuel</li>
+					</thingDefs>
+				</fuelFilter>
+				<initialFuelPercent>1</initialFuelPercent>
+			</li>
+		</comps>
+		<modExtensions>
+			<li Class="TabulaRasa.DefModExt_SubCategoryBuilding">
+				<subCategory>Outland_SubCatFurnitureWood</subCategory>
+				<showOnlyInCategory>true</showOnlyInCategory>
+			</li>
+		</modExtensions>
+	</ThingDef>
+	
+	<ThingDef ParentName="OutlandWallBoxLanternBase">
+		<defName>Outland_WallBoxLantern</defName>
+		<label>wall box lantern</label>
+		<comps>
+			<li Class="CompProperties_Glower">
+				<glowRadius>9</glowRadius>
+				<glowColor>(184, 136, 83, 0)</glowColor>
+			</li>
+		</comps>
+	</ThingDef>
+	
+	<ThingDef ParentName="OutlandWallBoxLanternBase" MayRequire="Ludeon.RimWorld.Ideology">
+		<defName>Outland_WallBoxLantern_Darklight</defName>
+		<label>wall box lantern (darklight)</label>
+		<comps>
+			<li Class="CompProperties_Glower">
+				<glowRadius>9</glowRadius>
+				<glowColor>(78, 226, 229, 0)</glowColor>
+			</li>
+		</comps>
+	</ThingDef>
+
+</Defs>

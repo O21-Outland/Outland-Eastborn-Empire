@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Defs>
+
+	<ThingDef ParentName="DoorBase">
+		<defName>Outland_WideDoorShoji</defName>
+		<label>wide shoji door</label>
+		<description>Divides rooms. An lattice frame door, with durable sheets covering. This large door requires adjacent walls to function.</description>
+		<thingClass>Building_MultiTileDoor</thingClass>
+		<statBases>
+			<WorkToBuild>15000</WorkToBuild>
+			<MaxHitPoints>250</MaxHitPoints>
+			<Beauty>10</Beauty>
+		</statBases>
+		<graphicData>
+			<texPath>Outland/Eastborn/Buildings/WideDoor/DoorMover</texPath>
+			<graphicClass>Graphic_Multi</graphicClass>
+			<damageData>
+				<enabled>false</enabled>
+			</damageData>
+		</graphicData>
+		<uiIconPath>Outland/Eastborn/Buildings/WideDoor/Door_MenuIcon_south</uiIconPath>
+		<useBlueprintGraphicAsGhost>true</useBlueprintGraphicAsGhost>
+		<size>(2, 1)</size>
+		<rotatable>true</rotatable>
+		<constructionSkillPrerequisite>5</constructionSkillPrerequisite>
+		<costStuffCount>100</costStuffCount>
+		<stuffCategories Inherit="False">
+			<li>Woody</li>
+		</stuffCategories>
+		<building>
+			<blueprintClass>Blueprint_Build</blueprintClass>
+			<blueprintGraphicData>
+				<texPath>Outland/Eastborn/Buildings/WideDoor/Door_MenuIcon</texPath>
+				<graphicClass>Graphic_Multi</graphicClass>
+				<shaderType>EdgeDetect</shaderType>
+				<drawSize>(3, 3)</drawSize>
+			</blueprintGraphicData>
+			<doorTopGraphic>
+				<texPath>Outland/Eastborn/Buildings/WideDoor/DoorTop</texPath>
+				<graphicClass>Graphic_Multi</graphicClass>
+				<drawSize>(3, 3)</drawSize>
+			</doorTopGraphic>
+			<doorSupportGraphic>
+				<texPath>Outland/Eastborn/Buildings/WideDoor/DoorSupport</texPath>
+				<graphicClass>Graphic_Multi</graphicClass>
+				<drawSize>(3, 3)</drawSize>
+			</doorSupportGraphic>
+		</building>
+		<researchPrerequisites>
+			<li>ComplexFurniture</li>
+		</researchPrerequisites>
+		<placeWorkers>
+			<li>PlaceWorker_MultiCellDoor</li>
+		</placeWorkers>
+		<modExtensions>
+			<li Class="TabulaRasa.DefModExt_SubCategoryBuilding">
+				<subCategory>Outland_SubCatStructural</subCategory>
+				<showOnlyInCategory>false</showOnlyInCategory>
+			</li>
+		</modExtensions>
+		<designationCategory>Outland_Outland</designationCategory>
+	</ThingDef>
+
+</Defs>

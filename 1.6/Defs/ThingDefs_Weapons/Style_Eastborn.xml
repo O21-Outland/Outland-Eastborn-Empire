@@ -1,0 +1,154 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Defs>
+
+	<ThingStyleDef>
+		<defName>Outland_EastbornArarebo</defName>
+		<label>eastborn ararebo</label>
+		<graphicData>
+			<texPath>Outland/Eastborn/Weapons/Faction/Ararebo</texPath>
+			<graphicClass>Graphic_Single</graphicClass>
+			<shaderType>CutoutComplex</shaderType>
+		</graphicData>
+	</ThingStyleDef>
+
+	<ThingStyleDef>
+		<defName>Outland_EastbornJitte</defName>
+		<label>eastborn jitte</label>
+		<graphicData>
+			<texPath>Outland/Eastborn/Weapons/Faction/Jitte</texPath>
+			<graphicClass>Graphic_Single</graphicClass>
+			<shaderType>CutoutComplex</shaderType>
+		</graphicData>
+	</ThingStyleDef>
+
+	<ThingStyleDef>
+		<defName>Outland_EastbornJumonjiYari</defName>
+		<label>eastborn jumonji yari</label>
+		<graphicData>
+			<texPath>Outland/Eastborn/Weapons/Faction/JumonjiYari</texPath>
+			<graphicClass>Graphic_Single</graphicClass>
+			<shaderType>CutoutComplex</shaderType>
+		</graphicData>
+	</ThingStyleDef>
+
+	<ThingStyleDef>
+		<defName>Outland_EastbornKabutowari</defName>
+		<label>eastborn kabutowari</label>
+		<graphicData>
+			<texPath>Outland/Eastborn/Weapons/Faction/Kabutowari</texPath>
+			<graphicClass>Graphic_Single</graphicClass>
+			<shaderType>CutoutComplex</shaderType>
+		</graphicData>
+	</ThingStyleDef>
+
+	<ThingStyleDef>
+		<defName>Outland_EastbornKatana</defName>
+		<label>eastborn katana</label>
+		<graphicData>
+			<texPath>Outland/Eastborn/Weapons/Faction/Katana</texPath>
+			<graphicClass>Graphic_Single</graphicClass>
+			<shaderType>CutoutComplex</shaderType>
+		</graphicData>
+	</ThingStyleDef>
+
+	<ThingStyleDef>
+		<defName>Outland_EastbornMasakari</defName>
+		<label>eastborn masakari</label>
+		<graphicData>
+			<texPath>Outland/Eastborn/Weapons/Faction/Masakari</texPath>
+			<graphicClass>Graphic_Single</graphicClass>
+			<shaderType>CutoutComplex</shaderType>
+		</graphicData>
+	</ThingStyleDef>
+
+	<ThingStyleDef>
+		<defName>Outland_EastbornNagamaki</defName>
+		<label>eastborn nagamaki</label>
+		<graphicData>
+			<texPath>Outland/Eastborn/Weapons/Faction/Nagamaki</texPath>
+			<graphicClass>Graphic_Single</graphicClass>
+			<shaderType>CutoutComplex</shaderType>
+		</graphicData>
+	</ThingStyleDef>
+
+	<ThingStyleDef>
+		<defName>Outland_EastbornNaginata</defName>
+		<label>eastborn naginata</label>
+		<graphicData>
+			<texPath>Outland/Eastborn/Weapons/Faction/Naginata</texPath>
+			<graphicClass>Graphic_Single</graphicClass>
+			<shaderType>CutoutComplex</shaderType>
+		</graphicData>
+	</ThingStyleDef>
+
+	<ThingStyleDef>
+		<defName>Outland_EastbornOdachi</defName>
+		<label>eastborn odachi</label>
+		<graphicData>
+			<texPath>Outland/Eastborn/Weapons/Faction/Odachi</texPath>
+			<graphicClass>Graphic_Single</graphicClass>
+			<shaderType>CutoutComplex</shaderType>
+		</graphicData>
+	</ThingStyleDef>
+
+	<ThingStyleDef>
+		<defName>Outland_EastbornOno</defName>
+		<label>eastborn ono</label>
+		<graphicData>
+			<texPath>Outland/Eastborn/Weapons/Faction/Ono</texPath>
+			<graphicClass>Graphic_Single</graphicClass>
+			<shaderType>CutoutComplex</shaderType>
+		</graphicData>
+	</ThingStyleDef>
+
+	<ThingStyleDef>
+		<defName>Outland_EastbornSai</defName>
+		<label>eastborn sai</label>
+		<graphicData>
+			<texPath>Outland/Eastborn/Weapons/Faction/Sai</texPath>
+			<graphicClass>Graphic_Single</graphicClass>
+			<shaderType>CutoutComplex</shaderType>
+		</graphicData>
+	</ThingStyleDef>
+
+	<ThingStyleDef>
+		<defName>Outland_EastbornSasumata</defName>
+		<label>eastborn sasumata</label>
+		<graphicData>
+			<texPath>Outland/Eastborn/Weapons/Faction/Sasumata</texPath>
+			<graphicClass>Graphic_Single</graphicClass>
+			<shaderType>CutoutComplex</shaderType>
+		</graphicData>
+	</ThingStyleDef>
+
+	<ThingStyleDef>
+		<defName>Outland_EastbornSuYari</defName>
+		<label>eastborn su yari</label>
+		<graphicData>
+			<texPath>Outland/Eastborn/Weapons/Faction/SuYari</texPath>
+			<graphicClass>Graphic_Single</graphicClass>
+			<shaderType>CutoutComplex</shaderType>
+		</graphicData>
+	</ThingStyleDef>
+
+	<ThingStyleDef>
+		<defName>Outland_EastbornTanto</defName>
+		<label>eastborn tanto</label>
+		<graphicData>
+			<texPath>Outland/Eastborn/Weapons/Faction/Tanto</texPath>
+			<graphicClass>Graphic_Single</graphicClass>
+			<shaderType>CutoutComplex</shaderType>
+		</graphicData>
+	</ThingStyleDef>
+
+	<ThingStyleDef>
+		<defName>Outland_EastbornYumi</defName>
+		<label>eastborn yumi</label>
+		<graphicData>
+			<texPath>Outland/Eastborn/Weapons/Faction/Yumi</texPath>
+			<graphicClass>Graphic_Single</graphicClass>
+			<shaderType>CutoutComplex</shaderType>
+		</graphicData>
+	</ThingStyleDef>
+
+</Defs>

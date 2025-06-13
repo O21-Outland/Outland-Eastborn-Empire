@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+
+	<StyleCategoryDef MayRequire="Ludeon.RimWorld.Ideology">
+		<defName>Outland_StyleEastborn</defName>
+		<label>Eastborn</label>
+		<iconPath>Outland/Eastborn/World/EastbornBaseIcon</iconPath>
+		<soundOngoingRitual>RitualSustainer_Rustic</soundOngoingRitual>
+		<ritualVisualEffectDef>Rustic</ritualVisualEffectDef>
+		<thingDefStyles>
+			<li>
+				<thingDef>Outland_Ararebo</thingDef>
+				<styleDef>Outland_EastbornArarebo</styleDef>
+			</li>
+			<li>
+				<thingDef>Outland_Jitte</thingDef>
+				<styleDef>Outland_EastbornJitte</styleDef>
+			</li>
+			<li>
+				<thingDef>Outland_JumonjiYari</thingDef>
+				<styleDef>Outland_EastbornJumonjiYari</styleDef>
+			</li>
+			<li>
+				<thingDef>Outland_Kabutowari</thingDef>
+				<styleDef>Outland_EastbornKabutowari</styleDef>
+			</li>
+			<li>
+				<thingDef>Outland_Katana</thingDef>
+				<styleDef>Outland_EastbornKatana</styleDef>
+			</li>
+			<li>
+				<thingDef>Outland_Masakari</thingDef>
+				<styleDef>Outland_EastbornMasakari</styleDef>
+			</li>
+			<li>
+				<thingDef>Outland_Nagamaki</thingDef>
+				<styleDef>Outland_EastbornNagamaki</styleDef>
+			</li>
+			<li>
+				<thingDef>Outland_Naginata</thingDef>
+				<styleDef>Outland_EastbornNaginata</styleDef>
+			</li>
+			<li>
+				<thingDef>Outland_Odachi</thingDef>
+				<styleDef>Outland_EastbornOdachi</styleDef>
+			</li>
+			<li>
+				<thingDef>Outland_Ono</thingDef>
+				<styleDef>Outland_EastbornOno</styleDef>
+			</li>
+			<li>
+				<thingDef>Outland_Sai</thingDef>
+				<styleDef>Outland_EastbornSai</styleDef>
+			</li>
+			<li>
+				<thingDef>Outland_Sasumata</thingDef>
+				<styleDef>Outland_EastbornSasumata</styleDef>
+			</li>
+			<li>
+				<thingDef>Outland_SuYari</thingDef>
+				<styleDef>Outland_EastbornSuYari</styleDef>
+			</li>
+			<li>
+				<thingDef>Outland_Tanto</thingDef>
+				<styleDef>Outland_EastbornTanto</styleDef>
+			</li>
+			<li>
+				<thingDef>Outland_Yumi</thingDef>
+				<styleDef>Outland_EastbornYumi</styleDef>
+			</li>
+		</thingDefStyles>
+	</StyleCategoryDef>
+
+</Defs>
