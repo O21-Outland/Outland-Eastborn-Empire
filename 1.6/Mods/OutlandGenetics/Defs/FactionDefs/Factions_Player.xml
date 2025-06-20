@@ -36,7 +36,7 @@
 			</thingDefs>
 		</apparelStuffFilter>
 		<modExtensions>
-			<li Class="VFECore.FactionDefExtension">
+			<li Class="VEF.Factions.FactionDefExtension">
 				<!-- TODO: Look into making some Eastborn specific pack animal textures. Muffalo & Horses minimum. -->
 				<!-- <packAnimalTexNameSuffix>EastbornPack</packAnimalTexNameSuffix> -->
 				<strangerInBlackReplacement>Outland_SamuraiInBlack</strangerInBlackReplacement>
