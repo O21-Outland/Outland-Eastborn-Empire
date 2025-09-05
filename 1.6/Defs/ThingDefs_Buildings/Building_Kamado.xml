@@ -71,9 +71,10 @@
 					<li>FueledStove</li>
 				</inheritRecipesFrom>
 			</li>
-			<li Class="TabulaRasa.DefModExt_SubCategoryBuilding">
-				<subCategory>Outland_SubCatProduction</subCategory>
-				<showOnlyInCategory>true</showOnlyInCategory>
+			<li Class="TabulaRasa.DefModExt_SubcategoryDisplay">
+				<subcategories>
+					<li>Production</li>
+				</subcategories>
 			</li>
 		</modExtensions>
 	</ThingDef>

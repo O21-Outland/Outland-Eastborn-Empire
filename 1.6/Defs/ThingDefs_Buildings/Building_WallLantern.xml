@@ -44,9 +44,10 @@
 			</li>
 		</comps>
 		<modExtensions>
-			<li Class="TabulaRasa.DefModExt_SubCategoryBuilding">
-				<subCategory>Outland_SubCatFurnitureWood</subCategory>
-				<showOnlyInCategory>true</showOnlyInCategory>
+			<li Class="TabulaRasa.DefModExt_SubcategoryDisplay">
+				<subcategories>
+					<li>Furniture (Wooden)</li>
+				</subcategories>
 			</li>
 		</modExtensions>
 	</ThingDef>
